@@ -1,0 +1,13 @@
+# requests: https://requests.readthedocs.io/en/master/
+# beautifulsoup: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+# Scrapy: https://scrapy.org/
+# Django: https://www.djangoproject.com/
+# Flask: https://flask.palletsprojects.com/en/1.1.x/
+# FastAPI: https://fastapi.tiangolo.com/
+# TensorFlow: https://www.tensorflow.org/api_docs/python/tf
+# NumPy: https://numpy.org/
+# pandas: https://pandas.pydata.org/docs/index.html#
+# Matplotlib: https://matplotlib.org/
+# mypy: https://github.com/python/mypy
+# Flake8: https://flake8.pycqa.org/en/latest/
+# pytest: https://docs.pytest.org/en/latest/
