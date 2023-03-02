@@ -1,3 +1,6 @@
+from exceptions import InvalidRateValue, MovieAlreadySeen
+
+
 class Movie:
 
     AVAILABLE_CATEGORIES = ["Comedy", "Horror"]
@@ -29,9 +32,9 @@ class Movie:
 
     def vote(self, viewer_name, rate):
         if viewer_name in self.__viewers:
-            raise ValueError("You have alredy seen this movie!")
+            raise MovieAlreadySeen()
         if not 0 < rate < 6:
-            raise ValueError("Movie rate must be a number greater than 0 and lower than 6")
+            raise InvalidRateValue
 
         self.__viewers.append(viewer_name)
         self._rates.append(rate)
