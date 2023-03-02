@@ -25,7 +25,7 @@ def run_ranking_example():
 
     RankingGenerator.generate_ranking([funny_movie, scary_movie])
 
-    
+
 def run_comedy_example():
     fun_movie = Comedy("Fun Movie")
     fun_movie.vote("Dominik", rate=5)
