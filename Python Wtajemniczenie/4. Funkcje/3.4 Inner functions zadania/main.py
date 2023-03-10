@@ -13,7 +13,7 @@ def run_example():
         rented_movies=[],
     )
 
-    # actions.watch_movie(standard_user, some_movies[0])
+    # action.watch_movie(standard_user, some_movies[0])
     actions.rent_movie(standard_user, some_movies[0])
     actions.watch_movie(standard_user, some_movies[0])
     # actions.watch_movie(standard_user, some_movies[0])
