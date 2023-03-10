@@ -4,3 +4,7 @@ def print_top_movies(movies, *, limit=10):
         if index == limit:
             break
         print(f"{index + 1}. {movie}")
+
+
+def print_all_movies_ranking(movies):
+    print_top_movies(movies, limit=len(movies))

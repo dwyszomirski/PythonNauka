@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from new_movies.movie import Movie
+from new_movies_dwa.movie import Movie
 
 
 @dataclass

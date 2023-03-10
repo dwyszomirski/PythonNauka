@@ -1,12 +1,10 @@
-from new_movies import movies_ranking
-from new_movies.random_data_utility import random_generator
+from new_movies_dwa import movies_ranking, movies_directory, actions
 
 
 def run_example():
-    some_movies = random_generator.generate_random_movies(movies_number=15)
-    movies_ranking.print_top_movies(some_movies)
-    # movies_ranking.print_top_movies(some_movies, limit=12)
-    # movies_ranking.print_top_movies(some_movies, 12)
+    movies_ranking.print_all_movies_ranking(movies_directory.available_movies)
+    actions.add_movie()
+    movies_ranking.print_all_movies_ranking(movies_directory.available_movies)
 
 
 if __name__ == "__main__":

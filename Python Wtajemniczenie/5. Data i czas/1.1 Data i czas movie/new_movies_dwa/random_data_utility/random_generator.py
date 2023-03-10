@@ -4,7 +4,7 @@ import random
 from dataclasses import dataclass
 from datetime import date
 
-from new_movies.movie import Movie
+from new_movies_dwa.movie import Movie
 
 MIN_VOTERS = 3
 MAX_VOTERS = 10
@@ -13,7 +13,7 @@ MIN_RATE = 1
 MAX_RATE = 5
 
 RELEASE_YEAR_FROM = 1980
-RELEASE_YEAR_TO = 2023
+RELEASE_YEAR_TO = 2020
 
 
 @dataclass

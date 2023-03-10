@@ -1,4 +1,4 @@
-from new_movies.user import Role
+from new_movies_dwa.user import Role
 
 
 def has_role(role):

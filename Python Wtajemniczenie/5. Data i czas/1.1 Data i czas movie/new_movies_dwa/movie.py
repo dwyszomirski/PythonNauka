@@ -1,4 +1,4 @@
-from exceptions2 import MovieAlreadySeen, InvalidRateValue
+from new_movies_dwa.exceptions3 import MovieAlreadySeen, InvalidRateValue
 
 
 class Movie:

@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import List
 
-from new_movies.rented_movie import RentedMovie
+from new_movies_dwa.rented_movie import RentedMovie
 
 
 class Role(Enum):
