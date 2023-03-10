@@ -1,4 +1,5 @@
 from new_movies_dwa.exceptions3 import MovieAlreadySeen, InvalidRateValue
+from datetime import date
 
 
 class Movie:
@@ -10,6 +11,7 @@ class Movie:
         self.name = name
         self.category = category
         self.release_date = release_date
+        self.added_at_date = date.today()
         self._rates = []
         self._viewers = []
 

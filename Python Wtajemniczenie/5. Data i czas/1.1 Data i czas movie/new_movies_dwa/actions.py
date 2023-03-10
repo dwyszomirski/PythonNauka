@@ -1,6 +1,7 @@
 from datetime import date
 
-from new_movies_dwa import permissions, movies_directory
+from new_movies_dwa import permissions, movies_directory, cinema_schedule
+from cinema_schedule import Weekday
 from new_movies_dwa.exceptions3 import (
     NoCreditsForMovieRent,
     ActionNotAllowed,
@@ -56,3 +57,13 @@ def add_movie():
     release_date = date.fromisoformat(release_date_input)
     new_movie = Movie(name, category, release_date)
     movies_directory.add_movie(new_movie)
+
+
+def cinema_movies_schedule():
+    cinema_date_input = input("When would you like to visit the cinema? (YYYY-MM-DD): ")
+    cinema_date = date.fromisoformat(cinema_date_input)
+    weekday_number = cinema_date.isoweekday()
+    weekday = Weekday(weekday_number)
+    print("This day you can watch:")
+    for movie in cinema_schedule.get_movies_by_weekday(weekday):
+        print(movie)
